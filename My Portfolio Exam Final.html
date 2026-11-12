@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio Exam Final</title>
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1f3a5f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 5px 10px;
+  padding: 6px 12px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: #3f6ba5;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+h2 {
+  color: #1f3a5f;
+  border-bottom: 2px solid #1f3a5f;
+  padding-bottom: 5px;
+}
+
+.profile {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #1f3a5f;
+  color: white;
+}
+
+pre {
+  background-color: #272822;
+  color: #f8f8f2;
+  padding: 15px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+footer {
+  background-color: #1f3a5f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Henry Sumangil</h1>
+    <p>BSIT 1 C</p>
+    <nav>
+      <a href="#personal">Personal Information</a>
+      <a href="#education">Educational Background</a>
+      <a href="#skills">Skills</a>
+      <a href="#java">Java Code</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PERSONAL INFORMATION -->
+    <section id="personal">
+      <h2>Personal Information</h2>
+      <img src="c:\Users\libur\Downloads\518977545_122230380110155671_8226321759968701105_n.jpg" alt="My photo" class="profile">
+      <p><strong>Name:</strong> HENRY R. SUMANGIL</p>
+      <p><strong>Address:</strong> NUEVA ECIJA,TALUGTUG </p>
+      <p><strong>Email:</strong> liburexca107@gmail.com</p>
+      <p><strong>Phone:</strong> 09944148688</p>
+      <h3>About Me</h3>
+      <p>
+        I am a BS Information Technology student at Our Lady of the Sacred
+        Heart College of Guimba, Inc. I enjoy learning how to code and editing and I am
+        applying for the Junior Programmer position at JPCS Inc.
+      </p>
+    </section>
+
+    <!-- EDUCATIONAL BACKGROUND -->
+    <section id="education">
+      <h2>Educational Background</h2>
+      <table>
+        <tr>
+          <th>Level</th>
+          <th>School</th>
+          <th>Year</th>
+        </tr>
+        <tr>
+          <td>College</td>
+          <td>Our Lady of the Sacred Heart College of Guimba, Inc. (BSIT)</td>
+          <td>2025 - Present</td>
+        </tr>
+        <tr>
+          <td>Senior High School</td>
+          <td>Your Senior High School</td>
+          <td>2025 - 2026</td>
+        </tr>
+        <tr>
+          <td>Junior High School</td>
+          <td>Your Junior High School</td>
+          <td>2020 - 2023</td>
+        </tr>
+        <tr>
+          <td>Elementary</td>
+          <td>Your Elementary School</td>
+          <td>2014 - 2019</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- SKILLS MO NGANI -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <h3>Technical Skills</h3>
+      <h3>Video/Photo Editing</h3>
+      <ul>
+        <li>HTML and CSS</li>
+        <li>Java Programming (Console Applications)</li>
+        <li>GitHub (Repositories)</li>
+      </ul>
+      <h3>Other Competencies</h3>
+      <ul>
+        <li>Problem solving</li>
+        <li>Teamwork</li>
+        <li>Time management and profesional sleeping</li>
+      </ul>
+    </section>
+
+    <!-- JAVA CODE MO -->
+    <section id="java">
+      <h2>Java Code</h2>
+      <p>
+        <strong>CC102 Final Performance Task (PeTa):</strong>
+        Word Scramble Challenge - A console-based word puzzle game
+        featuring four difficulty levels: Easy, Medium, Hard, and Extreme.
+      </p>
+
+      <pre><code>import java.util.Scanner;
+import java.util.Random;
+
+public class WordPuzzle {
+
+    static Scanner input = new Scanner(System.in);
+    static Random random = new Random();
+
+    public static void main(String[] args) {
+
+        boolean running = true;
+
+        String[] easy = {
+            "APPLE", "SCHOOL", "HAPPY", "ORANGE", "PENCIL"
+        };
+
+        String[] medium = {
+            "COMPUTER", "INTERNET", "KEYBOARD",
+            "MONITOR", "LIBRARY"
+        };
+
+        String[] hard = {
+            "PROGRAMMING", "ALGORITHM", "DATABASE",
+            "VARIABLE", "FUNCTION"
+        };
+
+        String[] extreme = {
+            "TECHNOLOGY", "CYBERSECURITY", "ARCHITECTURE",
+            "COMMUNICATION", "SYNCHRONIZATION"
+        };
+
+        while (running) {
+
+            System.out.println("\n================================");
+            System.out.println("      WORD SCRAMBLE CHALLENGE");
+            System.out.println("================================");
+            System.out.println("[1] Easy");
+            System.out.println("[2] Medium");
+            System.out.println("[3] Hard");
+            System.out.println("[4] Extreme");
+            System.out.println("[5] Exit");
+            System.out.println("================================");
+            System.out.print("Choose difficulty: ");
+
+            int choice = getNumber();
+
+            switch (choice) {
+
+                case 1:
+                    playGame("EASY", easy);
+                    break;
+
+                case 2:
+                    playGame("MEDIUM", medium);
+                    break;
+
+                case 3:
+                    playGame("HARD", hard);
+                    break;
+
+                case 4:
+                    playGame("EXTREME", extreme);
+                    break;
+
+                case 5:
+                    System.out.println("\nThanks for playing!");
+                    System.out.println("Keep learning and keep solving!");
+                    running = false;
+                    break;
+
+                default:
+                    System.out.println("Invalid choice! Please try again.");
+            }
+        }
+
+        input.close();
+    }
+
+    static void playGame(String difficulty, String[] words) {
+
+        int score = 0;
+        int correct = 0;
+        int wrong = 0;
+
+        System.out.println("\n================================");
+        System.out.println("          " + difficulty);
+        System.out.println("================================");
+        System.out.println("Unscramble the words!");
+        System.out.println("You have 5 questions.");
+        System.out.println("================================");
+
+        for (int i = 0; i < words.length; i++) {
+
+            String originalWord = words[i];
+            String scrambledWord = scramble(originalWord);
+
+            System.out.println("\nQuestion " + (i + 1) + " of 5");
+            System.out.println("Unscramble this word: " + scrambledWord);
+
+            System.out.print("Your answer: ");
+            String answer = input.nextLine().trim();
+
+            if (answer.equalsIgnoreCase(originalWord)) {
+
+                System.out.println("CORRECT! Great job!");
+                score++;
+                correct++;
+
+            } else {
+
+                System.out.println("INCORRECT!");
+                System.out.println("Correct answer: " + originalWord);
+                wrong++;
+            }
+        }
+
+        System.out.println("\n================================");
+        System.out.println("          GAME RESULTS");
+        System.out.println("================================");
+
+        System.out.println("Difficulty: " + difficulty);
+        System.out.println("Total Questions: 5");
+        System.out.println("Correct Answers: " + correct);
+        System.out.println("Wrong Answers: " + wrong);
+        System.out.println("Your Score: " + score + "/5");
+        System.out.println("Percentage: " + (score * 20) + "%");
+
+        if (score == 5) {
+            System.out.println("Excellent! Perfect score!");
+        } else if (score >= 3) {
+            System.out.println("Good job! Keep practicing!");
+        } else {
+            System.out.println("Don't give up! Try again!");
+        }
+
+        System.out.println("================================");
+        System.out.println("Returning to main menu...");
+    }
+
+    static String scramble(String word) {
+
+        char[] letters = word.toCharArray();
+
+        for (int attempt = 0; attempt < 20; attempt++) {
+
+            for (int i = letters.length - 1; i > 0; i--) {
+
+                int j = random.nextInt(i + 1);
+
+                char temp = letters[i];
+                letters[i] = letters[j];
+                letters[j] = temp;
+            }
+
+            String scrambled = new String(letters);
+
+            if (!scrambled.equals(word)) {
+                return scrambled;
+            }
+        }
+
+        char first = letters[0];
+
+        for (int i = 0; i < letters.length - 1; i++) {
+            letters[i] = letters[i + 1];
+        }
+
+        letters[letters.length - 1] = first;
+
+        return new String(letters);
+    }
+
+    static int getNumber() {
+
+        while (true) {
+
+            String value = input.nextLine();
+
+            try {
+                return Integer.parseInt(value);
+            } catch (NumberFormatException e) {
+                System.out.print("Please enter a valid number: ");
+            }
+        }
+    }
+}</code></pre>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>BUILD DREAMS. CODE FUTURES | Ex Fide, Ad Futurum</p>
+  </footer>
+
+</body>
+</html>
